@@ -1,0 +1,14 @@
+<h1>
+    Home Page
+</h1>
+
+<% if (flash.success && flash.success.length > 0) { %> 
+    <h5>
+        <%= flash.success %>
+    </h5>
+      <%} else if (flash.error && flash.error.length > 0) { %> 
+        <h5>
+            <%= flash.error %>
+        </h5>
+          <%} %>
+

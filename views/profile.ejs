@@ -1,0 +1,20 @@
+<h1>
+    Profile Page
+</h1>
+
+<% if (flash.success && flash.success.length > 0) { %> 
+    <h5>
+        <%= flash.success %>
+    </h5>
+      <%} %>
+
+<p>
+    <%= user.name %>
+    <br>
+    <%= user.email %>
+</p>
+
+<% if(locals.user){ %> 
+    <a href="/user/sign-out">Sign Out</a>
+    <a href="/user/change-password">Change Password</a>
+    <%} %>
